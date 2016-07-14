@@ -1,6 +1,6 @@
 /* Mobile Navigation */
 .mobile-navigation {
-	background-color: $color__brand-2;
+	background-color: $color__brand-3;
 	position: fixed;
 	z-index: 150;
 	display: none;
@@ -186,7 +186,7 @@
 		color: #FFF;
 
 		&:hover {
-			color:$color__brand-2;
+			color: $color__brand-3;
 		}
 	}
 
@@ -197,7 +197,7 @@
 
 /* Desktop Drill Nav */
 .site-navigation {
-	background-color: $color__brand-2;
+	background-color: $color__brand-3;
 	padding:0 35px;
 	margin-bottom: 10px;
 	margin-top: 15px;
@@ -212,7 +212,7 @@
 		left: 0;
 		right: 0;
 		margin-top: -12px;
-		background-color: #FFF;
+		background-color: $color__brand-3;
 	}
 
 	ul {
@@ -256,7 +256,7 @@
 				background-color: #FFF;
 				text-transform: none;
 				padding:.5em;
-				color:$color__brand-1;
+				color: $white;
 
 				&:before {
 					content: ''!important;
@@ -264,7 +264,7 @@
 			}
 
 			.current_page_item > a, a:hover {
-				background-color:$color__background-alt;
+				background-color:$color__brand-1;
 			}
 
 			:hover > a,
@@ -313,7 +313,7 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	a:hover {
-		color:$color__brand-1;
+		color:$color__brand-2;
 	}
 
 	.current_page_item > a:hover {
@@ -345,7 +345,7 @@
 	a {
 		text-decoration: none;
 		font-size: .8125em;
-		background-color: #000;
+		background-color: $color__brand-3;
 		padding: .25em .6125em;
 		color: #FFF;
 	}
