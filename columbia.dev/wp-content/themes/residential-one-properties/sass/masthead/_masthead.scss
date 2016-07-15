@@ -28,6 +28,14 @@
 		}
 	}
 
+	.download-link {
+		float: right;
+		display: none;
+		#download-icon {
+			display: none;
+		}
+	}
+
 	.masthead-tel {
 		float: right;
 		font-family:$font__main-bold;
@@ -39,6 +47,7 @@
 			display: none;
 		}
 	}
+
 
 	.flex {
 		display: -ms-flexbox;
@@ -76,6 +85,20 @@
 		.masthead-tel {
 			span {
 				display: inline;
+			}
+		}
+		.download-link {
+			display: inline;
+			margin-left: 20px;
+			font-family:$font__main-bold;
+			font-size: .675em;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+			text-decoration: none;
+			#download-icon {
+				display: inline;
+				width: 1.5em;
+				margin-left: 10px;
 			}
 		}
 	}
