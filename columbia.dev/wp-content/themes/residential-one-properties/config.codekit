@@ -74,6 +74,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/imgs\/MIHU.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17628,
+		"inputAbbreviatedPath": "\/imgs\/MIHU.png",
+		"outputAbbreviatedPath": "\/imgs\/MIHU.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/imgs\/ui-bg_glass_55_fbf9ee_1x400.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -35,19 +35,28 @@
 			display: none;
 		}
 	}
-
-	.masthead-tel {
+	.alt-download-link {
 		float: right;
-		font-family:$font__main-bold;
-		font-size: .875em;
-		color: $color__brand-3;
-
-		span {
-			font-family: $font__main-alt-2;
+		display: none;
+		#alt-download-icon {
 			display: none;
 		}
 	}
 
+	.masthead-tel {
+		float: right;
+		font-family: ralewaymedium;
+		font-size: .875em;
+		color: $color__brand-3;
+
+		span {
+			// font-family: ralewaybold;
+			display: none;
+		}
+		.mast-phone {
+			font-family: ralewaybold;
+		}
+	}
 
 	.flex {
 		display: -ms-flexbox;
@@ -101,10 +110,26 @@
 				margin-left: 10px;
 			}
 		}
+		.alt-download-link {
+			float: right;
+			position: absolute;
+			right: 0;
+			top: 1.5em;
+			margin-right: 2em;
+			display: block;
+			font-family:$font__main-bold;
+			font-size: .675em;
+			text-transform: uppercase;
+			text-decoration: none;
+			#alt-download-icon {
+				display: inline;
+				width: 1.5em;;
+			}
+		}
 	}
 
 	@include respond-to(large) {
-		padding-top: 25px;
+		// padding-top: 25px;
 
 		.site-branding {
 			padding-bottom: 5px;

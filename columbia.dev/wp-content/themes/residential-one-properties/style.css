@@ -3316,19 +3316,31 @@ object {
 #masthead .download-link #download-icon {
   display: none;
 }
-/* line 39, sass/masthead/_masthead.scss */
+/* line 38, sass/masthead/_masthead.scss */
+#masthead .alt-download-link {
+  float: right;
+  display: none;
+}
+/* line 41, sass/masthead/_masthead.scss */
+#masthead .alt-download-link #alt-download-icon {
+  display: none;
+}
+/* line 46, sass/masthead/_masthead.scss */
 #masthead .masthead-tel {
   float: right;
-  font-family: "ralewaybold", Arial, Helvetica, sans-serif;
+  font-family: ralewaymedium;
   font-size: .875em;
   color: #00853e;
 }
-/* line 45, sass/masthead/_masthead.scss */
+/* line 52, sass/masthead/_masthead.scss */
 #masthead .masthead-tel span {
-  font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
   display: none;
 }
-/* line 52, sass/masthead/_masthead.scss */
+/* line 56, sass/masthead/_masthead.scss */
+#masthead .masthead-tel .mast-phone {
+  font-family: ralewaybold;
+}
+/* line 61, sass/masthead/_masthead.scss */
 #masthead .flex {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3344,28 +3356,28 @@ object {
   -ms-flex-align: baseline;
   align-items: baseline;
 }
-/* line 67, sass/masthead/_masthead.scss */
+/* line 76, sass/masthead/_masthead.scss */
 #masthead .flex .flex-item {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   position: relative;
 }
 @media (min-width: 575px) {
-  /* line 75, sass/masthead/_masthead.scss */
+  /* line 84, sass/masthead/_masthead.scss */
   #masthead .masthead-tel {
     font-size: 1em;
   }
 }
 @media (min-width: 750px) {
-  /* line 81, sass/masthead/_masthead.scss */
+  /* line 90, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     max-width: 275px;
   }
-  /* line 86, sass/masthead/_masthead.scss */
+  /* line 95, sass/masthead/_masthead.scss */
   #masthead .masthead-tel span {
     display: inline;
   }
-  /* line 90, sass/masthead/_masthead.scss */
+  /* line 99, sass/masthead/_masthead.scss */
   #masthead .download-link {
     display: inline;
     margin-left: 20px;
@@ -3375,19 +3387,33 @@ object {
     text-transform: uppercase;
     text-decoration: none;
   }
-  /* line 98, sass/masthead/_masthead.scss */
+  /* line 107, sass/masthead/_masthead.scss */
   #masthead .download-link #download-icon {
     display: inline;
     width: 1.5em;
     margin-left: 10px;
   }
+  /* line 113, sass/masthead/_masthead.scss */
+  #masthead .alt-download-link {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+    margin-right: 2em;
+    display: block;
+    font-family: "ralewaybold", Arial, Helvetica, sans-serif;
+    font-size: .675em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  /* line 124, sass/masthead/_masthead.scss */
+  #masthead .alt-download-link #alt-download-icon {
+    display: inline;
+    width: 1.5em;
+  }
 }
 @media (min-width: 1280px) {
-  /* line 1, sass/masthead/_masthead.scss */
-  #masthead {
-    padding-top: 25px;
-  }
-  /* line 109, sass/masthead/_masthead.scss */
+  /* line 134, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     padding-bottom: 5px;
     max-width: 300px;
