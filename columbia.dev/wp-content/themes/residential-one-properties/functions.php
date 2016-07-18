@@ -292,6 +292,12 @@ function residential_one_properties_sidebar_content() {
 	}
 }
 
+
 /*
-* Download Application
-*/
+* Remove space in header for admin bar - admin bar interferes with absolute positioning in the masthead
+ */
+// add_action('get_header', 'residential_one_properties_filter_head');
+
+// function residential_one_properties_filter_head() {
+// 	remove_action('wp_head', '_admin_bar_bump_cb');
+// }

@@ -3398,7 +3398,7 @@ object {
     float: right;
     position: absolute;
     right: 0;
-    top: 1.5em;
+    top: 2em;
     margin-right: 2em;
     display: block;
     font-family: "ralewaybold", Arial, Helvetica, sans-serif;
@@ -3413,6 +3413,10 @@ object {
   }
 }
 @media (min-width: 1280px) {
+  /* line 1, sass/masthead/_masthead.scss */
+  #masthead {
+    padding-top: 25px;
+  }
   /* line 134, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     padding-bottom: 5px;
