@@ -1,0 +1,147 @@
+#masthead {
+	background-color: $color__brand-1;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: $color__brand_3;
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		background-color: $color__brand_3;
+	}
+
+	.wrapper {
+		padding-bottom: 5px;
+	}
+
+	.site-branding {
+		width: 55%;
+		max-width: 225px;
+
+		.custom-logo {
+			display: block;
+		}
+
+		.custom-logo-link {
+			display: block;
+		}
+	}
+
+	.download-link {
+		float: right;
+		display: none;
+		#download-icon {
+			display: none;
+		}
+	}
+	.alt-download-link {
+		float: right;
+		display: none;
+		#alt-download-icon {
+			display: none;
+		}
+	}
+
+	.masthead-tel, .alt-masthead-tel {
+		float: right;
+		font-family: ralewaymedium;
+		font-size: .875em;
+		color: $color__brand-3;
+
+		span {
+			// font-family: ralewaybold;
+			display: none;
+		}
+		.mast-phone {
+			font-family: ralewaybold;
+		}
+	}
+
+	.flex {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display:flex;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-ms-flex-pack: justify;
+		align-content: space-around;
+		-ms-flex-align: baseline;
+		align-items:baseline;
+
+		.flex-item {
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			position: relative;
+		}
+	}
+
+	@include respond-to(x-small) {
+		.masthead-tel, .alt-masthead-tel {
+			font-size: 1em;
+		}
+	}
+
+	@include respond-to(small) {
+		.site-branding {
+			max-width: 275px;
+		}
+
+		.masthead-tel, .alt-masthead-tel {
+			span {
+				display: inline;
+			}
+		}
+		.alt-masthead-tel {
+			margin-top: 50px;
+		}
+		.download-link {
+			display: inline;
+			margin-left: 20px;
+			font-family:$font__main-bold;
+			font-size: .675em;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+			text-decoration: none;
+			#download-icon {
+				display: inline;
+				width: 1.5em;
+				margin-left: 10px;
+			}
+		}
+		.alt-download-section {
+			position: absolute;
+			right: 0;
+			top: 1.3em;
+			@include admin_sticky_fix(20);
+		}
+		.alt-download-link {
+			margin-right: 2em;
+			display: block;
+			font-family:$font__main-bold;
+			font-size: .675em;
+			text-transform: uppercase;
+			text-decoration: none;
+			#alt-download-icon {
+				display: inline;
+				width: 1.5em;;
+			}
+		}
+	}
+
+	@include respond-to(large) {
+		padding-top: 25px;
+
+		.site-branding {
+			padding-bottom: 5px;
+			max-width: 300px;
+		}
+		.alt-masthead-tel {
+			margin-top: 0;
+		}
+	}
+}
