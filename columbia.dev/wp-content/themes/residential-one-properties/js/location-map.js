@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		var js_file = document.createElement('script');
 		js_file.type = 'text/javascript';
-		js_file.src = 'https://maps.googleapis.com/maps/api/js?callback=initialize&language=' + lang;
+		js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBbb6_jT1FK3n7msQSis3VitMyULd6mwVA&callback=initialize&language=' + lang;
 		document.getElementsByTagName('body')[0].appendChild(js_file);
 	}
 });
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function initialize() {
 	// VARIABLES WE WILL NEED
 	var infowindow = new google.maps.InfoWindow();
-	
+
 	// SET OUR MAP OPTIONS
 	var myOptions = {
 		zoom:18,
@@ -23,7 +23,7 @@ function initialize() {
 		zoomControlOptions: {
 			position: google.maps.ControlPosition.RIGHT_BOTTOM
 		},
-		
+
 		/// ADD AND REMOVE SOME DEFAULT MAP CONTROLS
 		//zoomControl: false,
 		//mapTypeControl: false,
@@ -31,13 +31,13 @@ function initialize() {
 		panControl:false,
 		rotateControl:false,
 		streetViewControl:false,
-		
+
 		// ADD ALL OF THE MAP TYPES THAT WE WANT TO USE IN OUR MAP
 		mapTypeControlOptions: {
 			mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.SATELLITE]
-		}, mapTypeId: google.maps.MapTypeId.ROADMAP	
+		}, mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
-	
+
 	// LOAD THE MAP
 	var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
 
